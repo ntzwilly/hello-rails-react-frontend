@@ -14,10 +14,10 @@ import store from './redux/configureStore';
 
 const App = () => (
   <Provider store={store}>
-    <Router>
-      <LoadingBar />
-      <Routes>
-        <Route exact path="/" element={<Greeting />} />
+    <Router key="1">
+      <LoadingBar key="2" />
+      <Routes key="3">
+        <Route key="4" exact path="/" element={<Greeting />} />
       </Routes>
     </Router>
   </Provider>
